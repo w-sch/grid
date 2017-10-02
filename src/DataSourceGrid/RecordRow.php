@@ -21,4 +21,9 @@ final class RecordRow implements RowInterface
     {
         return new RecordFieldCell($this->record, $column->getKey());
     }
+
+    public function getRowData(): iterable
+    {
+        return $this->record->getRecordData();
+    }
 }

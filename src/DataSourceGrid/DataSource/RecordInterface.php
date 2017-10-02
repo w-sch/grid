@@ -11,4 +11,6 @@ interface RecordInterface
     public function getField(string $key);
 
     public function hasField(string $key): bool;
+
+    public function getRecordData(): iterable;
 }

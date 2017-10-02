@@ -27,4 +27,9 @@ final class ArrayRecord implements RecordInterface
     {
         return array_key_exists($key, $this->data);
     }
+
+    public function getRecordData(): iterable
+    {
+        return $this->data;
+    }
 }

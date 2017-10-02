@@ -33,4 +33,9 @@ final class SimpleColumn implements ColumnInterface
         $clone->label = $label;
         return $clone;
     }
+
+    public function __toString()
+    {
+        return $this->getKey();
+    }
 }
